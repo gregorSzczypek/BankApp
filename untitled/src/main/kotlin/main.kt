@@ -6,7 +6,6 @@ val register = mutableMapOf<String, Double>(
     "Jan" to -1234.00,
     "Ari" to 7890.00,
 )
-
 fun main() {
 
     println("Willkommen zur Bank!")
@@ -17,6 +16,9 @@ fun main() {
         println("2 - Konto hinzufügen")
         println("3 - Konto löschen")
         println("4 - Geld abheben")
+        println("5 - Geld einzahlen")
+        println("6 - Überweisung")
+        println("7 - Register anzeigen")
 
         println("exit - Programm beenden")
         val choice = readln()
@@ -26,7 +28,9 @@ fun main() {
             "2" -> {kontoHinzufuegen()}
             "3" -> {kontoLoeschen()}
             "4" -> {geldAbheben()}
-
+            "5" -> {geldEinzahlen()}
+            "6" -> {ueberweisung()}
+            "7" -> {registerAnzeigen()}
             "exit" -> {exitFun()}
         }
     }

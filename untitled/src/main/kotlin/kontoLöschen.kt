@@ -7,8 +7,7 @@ fun kontoLoeschen() {
         println("Konto erfolgreich gelöscht")
     } else {
         println("Konto nicht gefunden, bitte nochmal oder exit")
-        var choice = readln()
-
+        val choice = readln()
         if (choice == "exit") {
             exitFun()
         } else {

@@ -1,7 +1,7 @@
 fun geldAbheben() {
 
     println("Von welchem Konto soll Geld abgehoben werden?")
-    var nameKonto = readln()
+    val nameKonto = readln()
 
     if (!register.contains(nameKonto)) {
         println("Konto nicht gefunden, Vorgang abgeborchen!")
@@ -10,7 +10,7 @@ fun geldAbheben() {
             println("Welcher Geldbetrag soll abgehoben werden?")
             println("Kleinster Betrag 5 Euro")
             println("Maximaler Betrag 500 Euro")
-            var betrag = readln()
+            val betrag = readln()
             try {
                 betrag.toDouble()
             } catch (e: Exception) {

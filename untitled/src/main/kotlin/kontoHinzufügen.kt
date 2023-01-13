@@ -1,14 +1,14 @@
 fun kontoHinzufuegen() {
 
     println("Bitte geben Sie den Namen des Kontoinhabers ein:")
-    var nameNeuesKonto = readln()
+    val nameNeuesKonto = readln()
     if (register.contains(nameNeuesKonto)) {
         println("Konto bereits vergeben, Abbruch.")
         return
     } else {
         println("Bitte geben Sie den Kontostand an:")
         try {
-            var kontostand = readln().toDouble()
+            val kontostand = readln().toDouble()
             register[nameNeuesKonto] = kontostand
             println("Konto hinzugefügt!")
         } catch (e: Exception) {
